@@ -3,9 +3,9 @@ body{
     min-height: 100vh;
 }
 .container {
- max-width: 1300px;
- max-height: auto;
- padding:0 4% ;
+    max-width: 1300px;
+    max-height: auto;
+    padding:0 4% ;
 }
 nav {
     display: flex;
@@ -17,13 +17,15 @@ nav .icone {
     cursor: pointer;
     display: none;
 }
-nav .logo a{
+nav .logo {
     font-size: 30px;
     font-weight: bold;
     color: black;
     text-decoration: none;
     
 }
+
+
 nav ul{
     display: flex;
     list-style: none;
@@ -38,6 +40,13 @@ font-size: 17px;
 text-transform: uppercase;
 color: rgb(87, 85, 85)
 }
+nav ul li a:hover{
+    content:none;
+    font-size:20px;
+    color: rgb(219, 83, 20) ; 
+    transition: 0.5s;
+    opacity: 0.7;
+}
 nav ul button{
     border: none;
     background-color: rgb(87, 85, 85);
@@ -48,6 +57,14 @@ nav ul button{
     letter-spacing: 1px;
     margin-left: 20px;
     cursor: pointer;
+    
+}
+nav ul button:hover {           
+    content:none;
+    font-size:20px;
+    background-color: rgb(219, 83, 20) ; 
+    transition: 0.5s;
+    opacity: 0.7;
 }
 main{
     margin-top: 20px;
@@ -101,6 +118,14 @@ main{
         margin-top: 30px;
 
     }
+    .icons a :hover {           
+        content:none;
+        font-size:20px;
+        background-color: rgb(219, 83, 20) ; 
+        transition: 0.5s;
+        opacity: 0.7;
+
+    }
     .icons a{
         text-decoration: none;
 
@@ -119,12 +144,12 @@ main{
     }
     .img-bx img{
         width: 100%;
-
     }
     @media (max-width:970px){
-        nav .icones{
+        nav .icones img{
             display: block;  
         }
+        
         nav ul{
             position: fixed;
             width: 60%;
@@ -159,8 +184,7 @@ main{
         main{
             flex-direction: column;
         }
-        .text-bx,
-        .img-bx{
+        .text-bx, .img-bx{
             width: 100%;
             text-align: center;
         }
@@ -170,7 +194,7 @@ main{
         .text-bx .input-bx{
             justify-content: center;
         }
-
+    
     }
     
 
